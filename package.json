@@ -1,0 +1,16 @@
+{
+  "name": "pixo",
+  "version": "1.0.0",
+  "icon": "favicon.ico",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^26.2.0"
+  }
+}

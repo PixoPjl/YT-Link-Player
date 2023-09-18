@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body {
+    font-family: 'Inconsolata', sans-serif;
+    background-color: #23272A;
+    color: #ffffff;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+    overflow: hidden;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: #23272A;
+}
+.container {
+    background-color: #2C2F33;
+    margin: 10px;
+    height: 100vh;
+    width: 200vh;
+}
+
+#volumeSlider {
+    width: 30%;
+    height: 5px;
+    background: #d3d3d3;
+    opacity: 0.7;
+}
+
+/* Start Form */
+#videoForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+#videoLink {
+    background-color: #23272A;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    border-radius: 3mm;
+    margin-right: 2%;
+    transition: all .1s ease;
+    height: 10%;
+    border: none;
+    color: #ffffff;
+    width: 60%;
+}
+
+input:focus {
+    outline: transparent;
+    transform: scale(1.02);
+}
+
+#addButton {
+    color: #ffffff5e;
+    background-color: #4c4f52;
+    text-decoration: none;
+    border-radius: 3mm;
+    transition: all .1s ease;
+    border: none;
+    margin: 0;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: transparent;
+}
+
+.animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#compact-disc {
+    padding: 2%;
+}
+
+#videoProgress {
+    width: 220px;
+}
+
+.footer-music {
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-bottom: 10px;
+}
+
+#skipicon {
+    margin: -2px;
+}
+
+#playlist {
+    margin-top: 2%;
+    margin-left: 6px;
+}
+
+#compact-disc.rotate {
+    animation: rotation 2s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+#nowPlayingTitle {
+    font-family: 'Inconsolata', sans-serif;
+    margin: 0;
+    font-size: 14px;
+    margin-left: 26%;
+}
+
+.container #videoForm span{
+    margin-right: 2%;
+}
+
+#keyIcon {
+    transition: all .2s ease;
+    color: #ffffff;
+}
+
+#keyIcon:hover {
+    transform: scale(1.10);
+    color: #00b7ff;
+}
+
+.popup {
+    background-color: #23272A;
+    border: 1px solid;
+    border-color: #0a0b0c77;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    display: none;
+    z-index: 1000;
+    height: 90px;
+    width: 230px;
+    left: 50%;
+    top: 50%;
+}
+
+.container-popup {
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    left: 50%;
+    top: 50%;
+}
+.container-popup span {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#apiKey {
+    padding: 2px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 11px;
+    margin-top: -3%;
+    transition: all .2s ease;
+}
+
+#apiKey:focus {
+    outline:none;
+    transform: scale(1.05);
+}
+
+#apiButton {
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 6px;
+    margin-top: 3%;
+    transition: all .2s ease;
+}
+
+#apiButton:hover {
+    outline: none;
+    transform: scale(0.95);
+}

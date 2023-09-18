@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://www.youtube.com/iframe_api" defer></script>
+    <script type="module" src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <form id="videoForm">
+            <span id="keyIcon"><i class="fa-solid fa-key"></i></span>
+            <input type="text" id="videoLink" placeholder="YouTube Link" required>
+            <button id="addButton" type="submit">Adicionar</button>
+        </form>
+
+        <div class="separator"></div>
+        
+        <div class="popup">
+            <div class="container-popup">
+                <span>Youtube Api-Key</span>
+                <input type="text" id="apiKey">
+                <button id="apiButton">Save</button>
+            </div>
+        </div>
+
+        <div class="container-music">
+            <span id="nowPlayingTitle"></span>
+            <div class="animation">
+                <i id="compact-disc" class="fa-solid fa-compact-disc fa-2xl"></i>
+                <input type="range" id="videoProgress" min="0" value="0" step="1" disabled>
+            </div>
+            <div class="footer-music">
+                <button id="playPause"disabled></button>
+                <button id="skipsong" disabled><i id="skipicon" class="fa-solid fa-forward" style="color: #23272A;"></i></button>
+                <label for="volumeSlider">Volume:</label>
+                <input type="range" id="volumeSlider" min="0" max="100" step="1" value="10" disabled>
+                <span id="volumeUpButton" disabled></span>
+                <span id="volumeDownButton" disabled></span>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div id="playlist">
+            <h2></h2>
+            <ul id="playlistItems"></ul>
+        </div>
+
+        <div id="player"></div>
+    </div>
+</body>
+</html>
