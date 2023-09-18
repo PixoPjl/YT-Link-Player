@@ -6,6 +6,10 @@
 git clone https://github.com/PixoPjl/YT-Link-Player.git
 cd YT-Link-Player
 npm install
+
+OR
+
+Download the windows executable in release
  ```
 ### 🌟 Features 
 - Low RAM usage 😁
