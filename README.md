@@ -13,6 +13,7 @@ Download the windows executable in release
  ```
 ### 🌟 Features 
 - Low RAM usage 😁
+- High audio Quality
 - Play YouTube music by simply pasting the links 
 - Support for Playing YouTube Playlists 
 - User-friendly interface.
